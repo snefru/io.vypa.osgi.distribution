@@ -14,17 +14,13 @@
             </excludes>
             <useTransitiveDependencies>false</useTransitiveDependencies>
         </dependencySet>
-    </dependencySets>
-    <fileSets>
-        <fileSet>
-            <directory>${project.build.directory}/bin</directory>
+        <dependencySet>
             <outputDirectory>bin</outputDirectory>
-            <useDefaultExcludes>true</useDefaultExcludes>
             <includes>
-                <include>*.jar</include>
+                <include>org.apache.felix:org.apache.felix.main</include>
             </includes>
-        </fileSet>
-    </fileSets>
+        </dependencySet>
+    </dependencySets>
     <files>
         <file>
             <source>${project.basedir}/conf/config.properties</source>
